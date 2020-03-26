@@ -15,11 +15,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false});
 app.set('view engine', 'ejs');
 
 app.get('/'  , function(req,res){
-  res.render('contact')
+  res.render('index')
 });
 
 app.get('/contact'  , function(req,res){
-  res.render('contact')
+  res.render('index')
 });
 
 app.get('/form', (req,res)=>{
