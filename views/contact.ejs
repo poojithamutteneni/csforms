@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>form</title>
+  </head>
+  <style>
+  body{
+    margin:0;
+    padding:0;
+    background-color:  pink;
+  }
+  .contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
+
+  }
+  .contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+
+  }
+  .contact-form label{
+    display:block;
+    text-align: left;
+    color: #333;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    font-size:16px;
+  }
+input[type='text']{
+  width:100%;
+  height:30px;
+  font-size:12px;
+  margin-top:6px;
+}
+input[type='email']{
+  width:100%;
+  height:30px;
+  font-size:12px;
+  margin-top:6px;
+}
+  input[type='submit']{
+    background-color:purple;
+    color:white;
+    width:150px;
+    height:40px;
+  }
+  </style>
+  <body>
+<div class="contact-form">
+  <h1>Contact Us</h1>
+  <form id="txtb" method="POST" action="/contact">
+    <label for="name">Full Name : </label>
+    <input type="text" name="name" placeholder="Enter your name" >
+    <br></br>
+    <label for="department">Department : </label>
+    <input type="text" name="department" placeholder="Enter your Department">
+    <br></br>
+    <label for="email">E-Mail: </label>
+    <input type="email" name="email" value="" placeholder="Enter your E-mail">
+    <br></br>
+<input type="submit" value='SUBMIT'>
+</form>
+  </body>
+</html>
